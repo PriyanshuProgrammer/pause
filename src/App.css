@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+main{
+  width:100%;
+  overflow-x: hidden;
+}
+
+.section1{
+  width:100%;
+  min-height: 100vh;
+  background-color: #222831;
+  color: white;
+  position: relative;
+  padding: 5vw;
+  box-sizing: border-box;
+  overflow:hidden;
+}
+
+
+.section1 > p{
+  font-size: 15rem;
+  width: max-content;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+main>h1{
+  color: white;
+  position: fixed;
+  z-index: 1000;
+  left: 5vw;
+  top: 5vw;
+}
+
+main > .fixedbuttons{
+  position: fixed;
+  z-index: 1000;
+  bottom: 10vh;
+  left: 5vw;
+  display: flex;
+  gap: 20px;
+}
+
+main > .fixedbuttons > button{
+  border-style: none;
+  background-color: rgba(6, 5, 12, 0.623);
+  color: white;
+  padding: 10px 10px;
+  font-size: large;
+  border: 1px solid rgba(128, 128, 128, 0.336);
+}
+
+main > .fixedbuttons > button:hover{
+  cursor: pointer;
+}
+
+main > .fixednav{
+  position: fixed;
+  z-index: 1000;
+  right: 5vw;
+  top: 15vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+main > .fixednav p{
+  writing-mode: vertical-rl;
+  color: rgba(255, 255, 255, 0.534);
+  rotate: 180deg;
+}
+
+
+main > .fixednav> p:hover{
+  cursor: pointer;
+}
+
+.section2{
+  width:100%;
+  min-height: 100vh;
+  background-color: #16191f;
+  color: white;
+  position: relative;
+  padding: 5vw;
+  box-sizing: border-box;
+  overflow:hidden;
+}
+
+.section2 > h1{
+  color: white;
+  position: absolute;
+  z-index: 1000;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 6vw;
+  width: 40vh;
+}
+
+.section2 .paras{
+  position: absolute;
+  width: 30vw;
+  right: 5vw;
+  min-height: 100vh;
+  top: 60vh;
+}
+
+.section2 .paras h1:nth-child(1){
+  color: white;
+  font-size: 2vw;
+  margin-top: 0vh;
+}
+
+.section2 .paras h1{
+  color: white;
+  font-size: 2vw;
+  margin-top: 90vh;
+}
+.section2 .paras h1:nth-child(6){
+  color: white;
+  font-size: 2vw;
+  margin-bottom: 0vh;
+}
+
+.section2 .paras h1:nth-child(7){
+  color: white;
+  font-size: 2vw;
+  margin-top: 300vh;
+  margin-bottom: 0vh;
+}
+
+
+.phone{
+  width: fit-content;
+  height: fit-content;
+  top: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: fixed;
+  z-index:1;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 50px;
+}
+
+.imagecontainer{
+  background-image: url('./assets/iphone.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 24vw;
+  height: 47vw;
+  position: relative;
+  top: 0;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.image{
+  background-size: cover;
+  background-position: center;
+  width: 22vw;
+  height: 46vw;
+  border-radius: 30px;
+  position: absolute;
+  top: 0;
+}
+
+.defaultimage{
+  visibility: hidden;
+  background-size: cover;
+  background-position: center;
+  width: 22vw;
+  height: 22vw;
+  border-radius: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  border-radius: 0;
+}
+
+.section2 .paras h1:nth-child(7) button{
+  border-style: none;
+  background-color: white;
+  padding: 15px 40px;
+  margin-left: auto;
+  font-size: large;
+  border-radius: 10px;
+  margin-bottom: 5vh;
+}
+
+.section2 .paras h1:nth-child(7) button:hover{
+  background-color: rgb(209, 209, 209);
+  cursor: pointer;
+}
